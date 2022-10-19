@@ -21,13 +21,13 @@ jobs:
 
           echo "" >> $GITHUB_STEP_SUMMARY
 
-          echo "```bash" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
 
           echo "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys xxxxx" >> $GITHUB_STEP_SUMMARY
 
           echo "echo \"deb https://{user}:{password}@${REPO_BUCKET}/ci/$xxxx/ xxxxx main\"  | sudo tee /etc/apt/sources.list.d/chainflip list" >> $GITHUB_STEP_SUMMARY
 
-          echo "```" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
 
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "After these steps, run *apt update* and install the desired packages" >> $GITHUB_STEP_SUMMARY
